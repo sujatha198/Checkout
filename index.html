@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="checkout-container">
+            <h1>Checkout</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam duis vitae curabitur amet, fermentum lorem.</p>
+            <form id="checkoutForm">
+                <div class="inputfield">
+                    <div class="inputset1">
+                        <div class="input-wrapper">
+                            <label for="firstName">First name <span>*</span></label>
+                            <input type="text" id="firstName" placeholder="Your name" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="lastName">Last name <span>*</span></label>
+                            <input type="text" id="lastName" placeholder="Your last name" required>
+                        </div>
+                    </div>
+                    <div class="inputset2">
+                        <div class="input-wrapper">
+                            <div class="input-container">
+                                <label for="email">E-mail <span>*</span></label>
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" placeholder="Yourmail@gmail.com" required>
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="pincode">Pincode <span>*</span></label>
+                            <input type="text" id="pincode" placeholder="123456" required>
+                        </div>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="subscribe" style=" width: 20px; height: 20px;">
+                        <label for="subscribe">Stay updated with our latest products, exclusive offers, and special promotions by opting in to receive marketing emails from us. You can unsubscribe at any time.</label>
+                    </div>
+                    <button type="submit" class="btn">Enter</button>
+                </div>  
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="resultsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="results" id="results"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
